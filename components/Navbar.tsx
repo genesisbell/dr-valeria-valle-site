@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Navbar() {
-  const { t, locale, toggleLocale } = useLanguage();
+  const { t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
@@ -31,7 +31,7 @@ export default function Navbar() {
               className="rounded-full"
               priority
             />
-            <div className="hidden sm:block">
+            <div>
               <p className="font-semibold text-brand-dark text-sm leading-tight">
                 {t.common.doctorName}
               </p>
@@ -53,33 +53,29 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Desktop right actions */}
-          <div className="hidden md:flex items-center gap-3 shrink-0">
-            <button
-              onClick={toggleLocale}
-              className="text-xs font-semibold text-brand-lavender border border-brand-lavender rounded-full px-3 py-1.5 hover:bg-brand-lavender hover:text-white transition-colors duration-200 cursor-pointer"
-            >
-              {locale === 'en' ? 'ES' : 'EN'}
-            </button>
+          {/* Right actions */}
+          <div className="flex items-center gap-2 shrink-0">
+            {/* Call button — icon only on mobile, full on desktop */}
             <a
-              href="tel:+15550000000"
-              className="flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-md hover:shadow-lg transition-shadow duration-200"
+              href="tel:+523334010497"
+              className="flex items-center gap-2 rounded-full text-sm font-semibold text-white shadow-md hover:shadow-lg transition-shadow duration-200 p-2.5 md:px-5 md:py-2.5"
               style={{ background: 'linear-gradient(135deg, #E8A4C8, #C4A8DE, #A4C8E0)' }}
+              aria-label={t.nav.callNow}
             >
               <PhoneIcon />
-              {t.nav.callNow}
+              <span className="hidden md:inline">{t.nav.callNow}</span>
             </a>
-          </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2 text-gray-600 hover:text-brand-lavender transition-colors cursor-pointer"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-            aria-expanded={menuOpen}
-          >
-            {menuOpen ? <XIcon /> : <MenuIcon />}
-          </button>
+            {/* Hamburger — mobile only */}
+            <button
+              className="md:hidden p-2 text-gray-600 hover:text-brand-lavender transition-colors cursor-pointer"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+              aria-expanded={menuOpen}
+            >
+              {menuOpen ? <XIcon /> : <MenuIcon />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile dropdown */}
@@ -98,22 +94,6 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <div className="mt-4 flex items-center gap-3 px-2">
-              <button
-                onClick={toggleLocale}
-                className="text-xs font-semibold text-brand-lavender border border-brand-lavender rounded-full px-3 py-1.5 cursor-pointer"
-              >
-                {locale === 'en' ? 'ES' : 'EN'}
-              </button>
-              <a
-                href="tel:+15550000000"
-                className="flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white"
-                style={{ background: 'linear-gradient(135deg, #E8A4C8, #C4A8DE, #A4C8E0)' }}
-              >
-                <PhoneIcon />
-                {t.nav.callNow}
-              </a>
-            </div>
           </div>
         )}
       </nav>

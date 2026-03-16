@@ -1,7 +1,13 @@
+import AboutSection from '@/components/AboutSection';
+import ProfileSection from '@/components/ProfileSection';
+import ServicesSection from '@/components/ServicesSection';
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <p className="text-gray-400 text-sm">Page content coming soon…</p>
-    </div>
+    <main className="pt-20">
+      <AboutSection />
+      <ProfileSection />
+      <ServicesSection />
+    </main>
   );
 }

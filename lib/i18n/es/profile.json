@@ -1,0 +1,31 @@
+{
+  "title": "Perfil Profesional",
+  "heading": "Formación y Certificaciones",
+  "licenseLabel": "Cédula Profesional",
+  "specialtyLicenseLabel": "Cédula Especialidad",
+  "educationTitle": "Formación Académica",
+  "awardsTitle": "Premios y Distinciones",
+  "education": [
+    {
+      "degree": "Neurología Pediátrica",
+      "institution": "Universidad Nacional Autónoma de México",
+      "country": "México"
+    },
+    {
+      "degree": "Pediatría Médica",
+      "institution": "Universidad de Guadalajara",
+      "country": "México"
+    },
+    {
+      "degree": "Licenciatura en Medicina General",
+      "institution": "Universidad de Guadalajara",
+      "country": "México"
+    }
+  ],
+  "awards": [
+    "Consejo Mexicano de Certificación en Pediatría — 7mo lugar a nivel nacional, 2023",
+    "Especialidad en Neurología Pediátrica — 1er lugar de la generación 2023–2025",
+    "Congreso Anual del Capítulo Mexicano de la Liga Internacional contra la Epilepsia, León 2023 — 1er lugar en carteles libres",
+    "Congreso Anual de Pediatría, Colima 2022 — 1er lugar en carteles libres"
+  ]
+}

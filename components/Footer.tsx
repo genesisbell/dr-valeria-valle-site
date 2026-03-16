@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, locale, toggleLocale } = useLanguage();
   const year = new Date().getFullYear();
 
   const navLinks = [
@@ -66,19 +66,23 @@ export default function Footer() {
             </h3>
             <div className="flex flex-col gap-3 text-sm text-gray-300">
               <a
-                href="tel:+15550000000"
+                href="tel:+523334010497"
                 className="flex items-center gap-2.5 hover:text-brand-sky transition-colors duration-200"
               >
                 <PhoneIcon />
-                +1 (555) 000-0000
+                33 3401 0497
               </a>
               <a
-                href="mailto:contacto@dravaleriovalle.com"
+                href="mailto:dra.valeriavalle@gmail.com"
                 className="flex items-center gap-2.5 hover:text-brand-sky transition-colors duration-200"
               >
                 <EmailIcon />
-                contacto@dravaleriovalle.com
+                dra.valeriavalle@gmail.com
               </a>
+              <div className="flex items-start gap-2.5">
+                <LocationIcon />
+                <span>{t.footer.address}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -90,10 +94,16 @@ export default function Footer() {
         />
 
         {/* Copyright */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
           <p>
             © {year} {t.common.doctorName}. {t.footer.rights}
           </p>
+          <button
+            onClick={toggleLocale}
+            className="text-xs font-semibold text-brand-lavender border border-brand-lavender rounded-full px-3 py-1.5 hover:bg-brand-lavender hover:text-white transition-colors duration-200 cursor-pointer"
+          >
+            {locale === 'en' ? 'Español' : 'English'}
+          </button>
           <a
             href="https://margaretsoftware.com/"
             target="_blank"
@@ -117,6 +127,15 @@ function PhoneIcon() {
         strokeWidth={2}
         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"
       />
+    </svg>
+  );
+}
+
+function LocationIcon() {
+  return (
+    <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>
   );
 }

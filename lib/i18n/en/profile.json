@@ -1,0 +1,31 @@
+{
+  "title": "Professional Profile",
+  "heading": "Training & Certifications",
+  "licenseLabel": "Medical License",
+  "specialtyLicenseLabel": "Specialty License",
+  "educationTitle": "Academic Training",
+  "awardsTitle": "Awards & Distinctions",
+  "education": [
+    {
+      "degree": "Pediatric Neurology",
+      "institution": "National Autonomous University of Mexico (UNAM)",
+      "country": "México"
+    },
+    {
+      "degree": "Medical Pediatrics",
+      "institution": "University of Guadalajara",
+      "country": "México"
+    },
+    {
+      "degree": "General Medicine",
+      "institution": "University of Guadalajara",
+      "country": "México"
+    }
+  ],
+  "awards": [
+    "Mexican Council of Pediatric Certification — 7th place nationwide, 2023",
+    "Pediatric Neurology Subspecialty — 1st place of the 2023–2025 graduating class",
+    "Annual Congress of the Mexican Chapter of the International League Against Epilepsy, León 2023 — 1st place, poster category",
+    "Annual Pediatrics Congress, Colima 2022 — 1st place, poster category"
+  ]
+}

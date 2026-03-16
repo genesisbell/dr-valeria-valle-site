@@ -1,0 +1,41 @@
+{
+  "title": "Servicios",
+  "heading": "Enfermedades Tratadas",
+  "pricingTitle": "Servicios y Precios",
+  "pricing": [
+    { "name": "Consulta en línea", "price": "$1,000" },
+    { "name": "Consulta Neurológica", "price": "$1,000" },
+    { "name": "Pesquisa de trastornos del neurodesarrollo", "price": "$1,000" },
+    { "name": "Tratamiento para cefalea", "price": "$1,000" },
+    { "name": "Consulta de Primera Vez y Subsecuente", "price": "$1,000" },
+    { "name": "Seguimiento del neurodesarrollo", "price": "$1,000" }
+  ],
+  "conditions": [
+    "Encefalitis",
+    "Microcefalia",
+    "Parálisis infantil",
+    "Autismo",
+    "Trastorno del sueño por ansiedad",
+    "Ausencias típicas",
+    "Convulsiones febriles",
+    "El tartamudeo y los niños",
+    "Lesión cerebral en bebés",
+    "Miotonía congénita",
+    "Neurofibromatosis 2",
+    "Neurofibromatosis-1",
+    "Retardo mental",
+    "Retraso del desarrollo",
+    "Síndrome de Rett",
+    "Trastorno de conducta",
+    "Trastorno de terror durante el sueño",
+    "Trastorno de movimientos estereotípicos",
+    "Trastorno del desarrollo de la coordinación",
+    "Trastorno de tic transitorio",
+    "Trastorno del desarrollo de la lectura",
+    "Trastorno del espectro autista (TEA)",
+    "Trastorno fonológico",
+    "Trastornos neurológicos",
+    "Trastornos del sueño",
+    "Trastorno por déficit de atención"
+  ]
+}

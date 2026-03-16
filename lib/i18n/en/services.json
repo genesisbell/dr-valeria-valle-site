@@ -1,0 +1,41 @@
+{
+  "title": "Services",
+  "heading": "Conditions Treated",
+  "pricingTitle": "Services & Pricing",
+  "pricing": [
+    { "name": "Online Consultation", "price": "$1,000" },
+    { "name": "Neurological Consultation", "price": "$1,000" },
+    { "name": "Neurodevelopmental Disorder Screening", "price": "$1,000" },
+    { "name": "Headache Treatment", "price": "$1,000" },
+    { "name": "First Visit and Follow-up Consultation", "price": "$1,000" },
+    { "name": "Neurodevelopmental Follow-up", "price": "$1,000" }
+  ],
+  "conditions": [
+    "Encephalitis",
+    "Microcephaly",
+    "Infantile Paralysis",
+    "Autism",
+    "Anxiety Sleep Disorder",
+    "Typical Absence Seizures",
+    "Febrile Seizures",
+    "Stuttering in Children",
+    "Brain Injury in Infants",
+    "Congenital Myotonia",
+    "Neurofibromatosis Type 2",
+    "Neurofibromatosis Type 1",
+    "Intellectual Disability",
+    "Developmental Delay",
+    "Rett Syndrome",
+    "Conduct Disorder",
+    "Sleep Terror Disorder",
+    "Stereotypic Movement Disorder",
+    "Developmental Coordination Disorder",
+    "Transient Tic Disorder",
+    "Reading Development Disorder",
+    "Autism Spectrum Disorder (ASD)",
+    "Phonological Disorder",
+    "Neurological Disorders",
+    "Sleep Disorders",
+    "Attention Deficit Disorder"
+  ]
+}
