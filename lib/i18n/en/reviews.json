@@ -1,0 +1,43 @@
+{
+  "title": "Reviews",
+  "heading": "What our patients say",
+  "verified": "Verified appointment",
+  "reviews": [
+    {
+      "name": "Sandra",
+      "date": "March 13, 2026",
+      "service": "Neurological Consultation",
+      "text": "The care was completely detailed and everything was explained thoroughly."
+    },
+    {
+      "name": "Brenda",
+      "date": "February 28, 2026",
+      "service": "Neurological Consultation",
+      "text": "I loved the care, precise and objective. Thank you very much."
+    },
+    {
+      "name": "Yoana",
+      "date": "February 16, 2026",
+      "service": "First Visit and Follow-up Consultation",
+      "text": "Excellent care, super detailed and patient with all our questions."
+    },
+    {
+      "name": "Ivonne",
+      "date": "February 4, 2026",
+      "service": "Neurological Consultation",
+      "text": "She is a very well-prepared and attentive doctor, she dedicates enough time for proper diagnosis and improvement."
+    },
+    {
+      "name": "Santiago",
+      "date": "January 21, 2026",
+      "service": "Neurological Consultation",
+      "text": "Very professional, objective and empathetic doctor with a strong sense of responsibility and punctuality. Warm care and highly expert in her field."
+    },
+    {
+      "name": "Itzel",
+      "date": "November 21, 2025",
+      "service": "First Visit and Follow-up Consultation",
+      "text": "Being the first visit, there were many detailed questions about daily life, school, general behavior, history of other types of therapies and family background. She ran some tests on my son and gave us documentation about the findings, fully understanding the school pressure we had around the diagnosis, so she provided us information to present to the school. During the session she was very kind, attentive, empathetic and professional. My son was calm the whole time and she has some really fun games."
+    }
+  ]
+}

@@ -22,8 +22,22 @@ export default function AboutSection() {
     <section
       id="about"
       ref={sectionRef}
-      className="py-24 bg-white overflow-hidden"
+      className="relative py-24 overflow-hidden"
     >
+      {/* Inverted background image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/background.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+          aria-hidden="true"
+        />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(248, 246, 251, 0.82)' }} />
+      </div>
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 

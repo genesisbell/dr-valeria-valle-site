@@ -1,0 +1,43 @@
+{
+  "title": "Opiniones",
+  "heading": "Lo que dicen nuestros pacientes",
+  "verified": "Cita verificada",
+  "reviews": [
+    {
+      "name": "Sandra",
+      "date": "13 de marzo de 2026",
+      "service": "Consulta Neurológica",
+      "text": "Me parece una atención completamente detallada y explicada de cada cosa"
+    },
+    {
+      "name": "Brenda",
+      "date": "28 de febrero de 2026",
+      "service": "Consulta Neurológica",
+      "text": "Me encantó su atención, precisa y objetiva, muchas Gracias"
+    },
+    {
+      "name": "Yoana",
+      "date": "16 de febrero de 2026",
+      "service": "Consulta de Primera Vez y Subsecuente",
+      "text": "Excelente la atención , súper detalla y paciente antes todas nuestras dudas"
+    },
+    {
+      "name": "Ivonne",
+      "date": "4 de febrero de 2026",
+      "service": "Consulta Neurológica",
+      "text": "Es una doctora muy preparada y muy atenta, dedica el tiempo suficiente para dar diagnósticos y para su mejora."
+    },
+    {
+      "name": "Santiago",
+      "date": "21 de enero de 2026",
+      "service": "Consulta Neurológica",
+      "text": "Dr muy profesional objetiva y empatica con un alto sentido de responsabilidad y puntualidad. Atención calida y con carácter muy experta en su ramo."
+    },
+    {
+      "name": "Itzel",
+      "date": "21 de noviembre de 2025",
+      "service": "Consulta de Primera Vez y Subsecuente",
+      "text": "Al ser la primera visita fueron muchas preguntas muy detallado sobre el día a día, la escuela, las conductas en general, antecedentes de otro tipo de terapias y familiares, hizo algunas pruebas a mi hijo y nos dio documentación sobre lo encontrado, entendiendo perfectamente la presión escolar que teníamos sobre el diagnóstico, por lo que nos facilitó información para presentarla. Durante la sesión fue muy amable atenta empática y profesional, mi niño estuvo tranquilo durante todo el tiempo y tiene juegos bastante divertidos."
+    }
+  ]
+}

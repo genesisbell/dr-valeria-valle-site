@@ -3,5 +3,9 @@
   "quickLinks": "Enlaces Rápidos",
   "contact": "Contacto",
   "rights": "Todos los derechos reservados.",
-  "address": "Calle Luis Pérez Verdía #475, Colonia Ladrón de Guevara, 44650 Gdl, Jalisco"
+  "address": "Calle Luis Pérez Verdía #475, Colonia Ladrón de Guevara, 44650 Gdl, Jalisco",
+  "locationTitle": "Ubicación",
+  "locationHeading": "¿Dónde nos encontramos?",
+  "getDirections": "Cómo llegar",
+  "phone": "Teléfono"
 }

@@ -3,5 +3,9 @@
   "quickLinks": "Quick Links",
   "contact": "Contact",
   "rights": "All rights reserved.",
-  "address": "Calle Luis Pérez Verdía #475, Colonia Ladrón de Guevara, 44650 Guadalajara, Jalisco"
+  "address": "Calle Luis Pérez Verdía #475, Colonia Ladrón de Guevara, 44650 Guadalajara, Jalisco",
+  "locationTitle": "Location",
+  "locationHeading": "Where to find us",
+  "getDirections": "Get Directions",
+  "phone": "Phone"
 }
