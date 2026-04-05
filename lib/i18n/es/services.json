@@ -1,5 +1,7 @@
 {
   "title": "Servicios",
+  "showMore": "Ver más",
+  "showLess": "Ver menos",
   "heading": "Enfermedades Tratadas",
   "pricingTitle": "Servicios y Precios",
   "pricing": [

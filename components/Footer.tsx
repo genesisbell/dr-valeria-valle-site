@@ -79,10 +79,15 @@ export default function Footer() {
                 <EmailIcon />
                 dra.valeriavalle@gmail.com
               </a>
-              <div className="flex items-start gap-2.5">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Calle+Luis+P%C3%A9rez+Verd%C3%ADa+475%2C+Ladr%C3%B3n+de+Guevara%2C+44650+Guadalajara%2C+Jalisco"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2.5 hover:text-brand-sky transition-colors duration-200"
+              >
                 <LocationIcon />
                 <span>{t.footer.address}</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>

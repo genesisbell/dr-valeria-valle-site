@@ -7,6 +7,8 @@ export default function ServicesSection() {
   const { t } = useLanguage();
   const sectionRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const MOBILE_LIMIT = 5;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -83,19 +85,39 @@ export default function ServicesSection() {
 
         {/* Conditions grid */}
         <div className="flex flex-wrap justify-center gap-3">
-          {t.services.conditions.map((condition, i) => (
-            <div
-              key={i}
-              className="transition-all duration-500 ease-out"
-              style={{
-                opacity: visible ? 1 : 0,
-                transform: visible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.95)',
-                transitionDelay: visible ? `${200 + i * 40}ms` : '0ms',
-              }}
+          {t.services.conditions.map((condition, i) => {
+            const hiddenOnMobile = !expanded && i >= MOBILE_LIMIT;
+            return (
+              <div
+                key={i}
+                className={`transition-all duration-500 ease-out ${hiddenOnMobile ? 'hidden sm:block' : ''}`}
+                style={{
+                  opacity: visible ? 1 : 0,
+                  transform: visible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.95)',
+                  transitionDelay: visible ? `${200 + i * 40}ms` : '0ms',
+                }}
+              >
+                <ConditionPill label={condition} index={i} />
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Show more/less — mobile only */}
+        <div className="mt-6 flex justify-center sm:hidden">
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="inline-flex items-center gap-1.5 rounded-full px-5 py-2 text-sm font-semibold border transition-colors duration-200"
+            style={{ borderColor: '#C4A8DE', color: '#7A5A9E' }}
+          >
+            {expanded ? t.services.showLess : t.services.showMore}
+            <svg
+              className={`w-4 h-4 transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}
+              fill="none" stroke="currentColor" viewBox="0 0 24 24"
             >
-              <ConditionPill label={condition} index={i} />
-            </div>
-          ))}
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
         </div>
 
       </div>
