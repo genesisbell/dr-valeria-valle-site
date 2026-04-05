@@ -40,7 +40,7 @@ export default function AboutSection() {
         <div className="absolute inset-0" style={ { backgroundColor: "rgba(248, 246, 251, 0.82)" } } />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-10 lg:pb-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 items-stretch">
 
           {/* Image — slides in from the left */ }
@@ -88,7 +88,8 @@ export default function AboutSection() {
             } }
           >
             <div
-              className="rounded-2xl bg-white/30 border border-white/40 shadow-sm px-6 py-5 flex flex-col gap-4 text-gray-700 text-base leading-relaxed">
+              className="rounded-2xl bg-white/30 backdrop-blur-xs border border-white/40 shadow-sm px-6 py-5 flex flex-col gap-4 text-gray-700 text-base leading-relaxed"
+              style={{ backdropFilter: 'blur(3px)' }}>
 
               {/* Name & credential */ }
               <div>
