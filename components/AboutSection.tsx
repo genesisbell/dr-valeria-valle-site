@@ -41,7 +41,7 @@ export default function AboutSection() {
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 items-stretch">
 
           {/* Image — slides in from the left */ }
           <div
@@ -64,8 +64,9 @@ export default function AboutSection() {
 
           {/* Mobile image */ }
           <div
-            className="flex justify-center lg:hidden transition-all duration-700 ease-out"
+            className="relative lg:hidden transition-all duration-700 ease-out h-96 min-[550px]:h-[40rem]"
             style={ {
+              //height: '400px',
               opacity: visible ? 1 : 0,
               transform: visible ? "translateX(0)" : "translateX(-60px)",
             } }
@@ -73,8 +74,7 @@ export default function AboutSection() {
             <Image
               src="/doctor.png"
               alt={ t.common.doctorName }
-              width={320}
-              height={400}
+              fill
               className="object-cover object-top"
             />
           </div>
