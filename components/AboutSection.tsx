@@ -45,13 +45,13 @@ export default function AboutSection() {
 
           {/* Image — slides in from the left */ }
           <div
-            className="relative hidden lg:flex justify-center transition-all duration-700 ease-out"
+            className="relative hidden lg:flex justify-center transition-all duration-700 ease-out -my-12"
             style={ {
               opacity: visible ? 1 : 0,
               transform: visible ? "translateX(0)" : "translateX(-60px)",
             } }
           >
-            <div className="relative w-1/2 h-full">
+            <div className="relative w-full h-full">
               <Image
                 src="/doctor.png"
                 alt={ t.common.doctorName }
@@ -64,19 +64,21 @@ export default function AboutSection() {
 
           {/* Mobile image */ }
           <div
-            className="relative lg:hidden transition-all duration-700 ease-out h-96 min-[550px]:h-[40rem]"
+            className="lg:hidden overflow-hidden transition-all duration-700 ease-out"
             style={ {
-              //height: '400px',
+              height: '45vh',
               opacity: visible ? 1 : 0,
               transform: visible ? "translateX(0)" : "translateX(-60px)",
             } }
           >
-            <Image
-              src="/doctor.png"
-              alt={ t.common.doctorName }
-              fill
-              className="object-cover object-top"
-            />
+            <div className="relative w-full" style={{ height: '58vh' }}>
+              <Image
+                src="/doctor.png"
+                alt={ t.common.doctorName }
+                fill
+                className="object-contain object-top"
+              />
+            </div>
           </div>
 
           {/* Text — slides in from the right */ }
